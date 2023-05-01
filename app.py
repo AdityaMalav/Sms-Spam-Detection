@@ -11,6 +11,10 @@ tf = pickle.load(open('vectorizer.pkl', 'rb'))
 model = pickle.load(open('model.pkl', 'rb'))
 
 
+
+st.set_page_config(page_title="SMS Spam detection", page_icon="📧", layout="wide")
+
+
 st.title('Email/SMS Spam Classifier')
 input_sms = st.text_area('Enter the message')
 
